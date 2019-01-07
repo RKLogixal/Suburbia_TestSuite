@@ -1,0 +1,138 @@
+2019-01-07 16:16:30,137 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_16-16
+2019-01-07 16:16:30,192 [main] INFO Suburbia -  Execution started onChrome2019-01-07_16-16
+2019-01-07 16:17:20,505 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_16-17
+2019-01-07 16:17:20,557 [main] INFO Suburbia -  Execution started onChrome2019-01-07_16-17
+2019-01-07 16:18:45,793 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_16-18
+2019-01-07 16:18:45,887 [main] INFO Suburbia -  Execution started onChrome2019-01-07_16-18
+2019-01-07 16:26:29,708 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_16-24
+2019-01-07 16:26:43,638 [main] INFO Suburbia -  Execution started onChrome2019-01-07_16-24
+2019-01-07 16:29:48,595 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_16-29
+2019-01-07 16:29:48,642 [main] INFO Suburbia -  Execution started onChrome2019-01-07_16-29
+2019-01-07 17:10:48,008 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_17-10
+2019-01-07 17:10:57,171 [main] INFO Suburbia -  Execution started onChrome2019-01-07_17-10
+2019-01-07 17:49:52,586 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_17-49
+2019-01-07 17:50:11,798 [main] INFO Suburbia -  Execution started onChrome2019-01-07_17-49
+2019-01-07 17:52:16,492 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_17-52
+2019-01-07 17:52:17,349 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 17:52:17,381 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 17:52:17,396 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 17:52:17,428 [main] INFO Suburbia -  Execution started onChrome2019-01-07_17-52
+2019-01-07 17:55:09,341 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_17-55
+2019-01-07 17:55:10,220 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 17:55:10,235 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 17:55:10,267 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 17:55:10,298 [main] INFO Suburbia -  Execution started onChrome2019-01-07_17-55
+2019-01-07 17:56:14,837 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_17-56
+2019-01-07 17:56:15,701 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 17:56:15,717 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 17:56:15,733 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 17:56:15,764 [main] INFO Suburbia -  Execution started onChrome2019-01-07_17-56
+2019-01-07 17:57:55,553 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_17-57
+2019-01-07 17:57:56,362 [TestNG] INFO Suburbia - Execution Started for Testcase number : TC01_End_To_End at time : 2019-01-07 17:57
+2019-01-07 17:58:02,278 [TestNG] INFO Suburbia - Successfully navigated to URL : https://www.suburbia.com.mx/tienda/inicio/
+2019-01-07 17:58:07,946 [TestNG] INFO Suburbia - WebElement fst Successfully identified
+2019-01-07 17:58:13,525 [TestNG] INFO Suburbia - WebElement dept Successfully identified
+2019-01-07 17:58:19,010 [TestNG] INFO Suburbia - WebElement tech Successfully identified
+2019-01-07 17:58:24,524 [TestNG] INFO Suburbia - WebElement elem Successfully identified
+2019-01-07 17:58:29,997 [TestNG] INFO Suburbia - WebElement aud Successfully identified
+2019-01-07 17:58:43,091 [TestNG] INFO Suburbia - Execution Ended for testcase number : TC01_End_To_End at time : 2019-01-07 17:57
+2019-01-07 17:58:43,171 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 17:58:43,185 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 17:58:43,201 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 17:58:43,232 [main] INFO Suburbia -  Execution started onChrome2019-01-07_17-57
+2019-01-07 18:01:08,466 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_18-01
+2019-01-07 18:01:09,173 [TestNG] INFO Suburbia - Execution Started for Testcase number : TC01_End_To_End at time : 2019-01-07 18:01
+2019-01-07 18:01:12,633 [TestNG] INFO Suburbia - Successfully navigated to URL : https://www.suburbia.com.mx/tienda/inicio/
+2019-01-07 18:01:18,371 [TestNG] INFO Suburbia - WebElement fst Successfully identified
+2019-01-07 18:01:23,936 [TestNG] INFO Suburbia - WebElement dept Successfully identified
+2019-01-07 18:01:29,500 [TestNG] INFO Suburbia - WebElement tech Successfully identified
+2019-01-07 18:01:35,014 [TestNG] INFO Suburbia - WebElement elem Successfully identified
+2019-01-07 18:01:40,490 [TestNG] INFO Suburbia - WebElement aud Successfully identified
+2019-01-07 18:03:10,718 [TestNG] INFO Suburbia - Execution Ended for testcase number : TC01_End_To_End at time : 2019-01-07 18:01
+2019-01-07 18:03:10,811 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 18:03:10,827 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 18:03:10,858 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 18:03:10,889 [main] INFO Suburbia -  Execution started onChrome2019-01-07_18-01
+2019-01-07 18:08:03,129 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_18-07
+2019-01-07 18:08:03,800 [TestNG] INFO Suburbia - Execution Started for Testcase number : TC01_End_To_End at time : 2019-01-07 18:08
+2019-01-07 18:08:09,281 [TestNG] INFO Suburbia - Successfully navigated to URL : https://www.suburbia.com.mx/tienda/inicio/
+2019-01-07 18:08:15,129 [TestNG] INFO Suburbia - WebElement fst Successfully identified
+2019-01-07 18:08:20,742 [TestNG] INFO Suburbia - WebElement dept Successfully identified
+2019-01-07 18:08:26,434 [TestNG] INFO Suburbia - WebElement tech Successfully identified
+2019-01-07 18:08:32,019 [TestNG] INFO Suburbia - WebElement elem Successfully identified
+2019-01-07 18:08:37,524 [TestNG] INFO Suburbia - WebElement aud Successfully identified
+2019-01-07 18:08:43,274 [TestNG] INFO Suburbia - Execution Ended for testcase number : TC01_End_To_End at time : 2019-01-07 18:08
+2019-01-07 18:08:43,314 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 18:08:43,338 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 18:08:43,370 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 18:08:43,402 [main] INFO Suburbia -  Execution started onChrome2019-01-07_18-07
+2019-01-07 19:07:40,799 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-07
+2019-01-07 19:07:40,861 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-07
+2019-01-07 19:08:50,299 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-08
+2019-01-07 19:08:50,346 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-08
+2019-01-07 19:14:19,501 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-14
+2019-01-07 19:14:20,323 [TestNG] INFO Suburbia - Execution Started for Testcase number : TC01_End_To_End at time : 2019-01-07 19:14
+2019-01-07 19:14:35,492 [TestNG] INFO Suburbia - Successfully navigated to URL : https://www.suburbia.com.mx/tienda/inicio/
+2019-01-07 19:14:41,189 [TestNG] INFO Suburbia - WebElement fst Successfully identified
+2019-01-07 19:14:46,672 [TestNG] INFO Suburbia - WebElement dept Successfully identified
+2019-01-07 19:14:52,193 [TestNG] INFO Suburbia - WebElement tech Successfully identified
+2019-01-07 19:14:57,750 [TestNG] INFO Suburbia - WebElement elem Successfully identified
+2019-01-07 19:15:03,219 [TestNG] INFO Suburbia - WebElement aud Successfully identified
+2019-01-07 19:15:16,386 [TestNG] INFO Suburbia - Execution Ended for testcase number : TC01_End_To_End at time : 2019-01-07 19:14
+2019-01-07 19:15:16,422 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 19:15:16,442 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 19:15:16,462 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 19:15:16,482 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-14
+2019-01-07 19:18:11,128 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-18
+2019-01-07 19:18:11,174 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-18
+2019-01-07 19:19:01,608 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-18
+2019-01-07 19:19:01,654 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-18
+2019-01-07 19:19:31,773 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-19
+2019-01-07 19:19:31,820 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-19
+2019-01-07 19:21:38,570 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-21
+2019-01-07 19:21:38,638 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-21
+2019-01-07 19:31:16,934 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-31
+2019-01-07 19:31:17,238 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-31
+2019-01-07 19:31:54,878 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-31
+2019-01-07 19:31:54,906 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-31
+2019-01-07 19:33:04,206 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-33
+2019-01-07 19:33:04,252 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-33
+2019-01-07 19:59:56,683 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_19-59
+2019-01-07 19:59:57,648 [TestNG] INFO Suburbia - Execution Started for Testcase number : TC01_End_To_End at time : 2019-01-07 19:59
+2019-01-07 20:00:02,949 [TestNG] INFO Suburbia - Successfully navigated to URL : https://www.suburbia.com.mx/tienda/inicio/
+2019-01-07 20:00:08,964 [TestNG] INFO Suburbia - WebElement fst Successfully identified
+2019-01-07 20:00:14,481 [TestNG] INFO Suburbia - WebElement dept Successfully identified
+2019-01-07 20:00:20,038 [TestNG] INFO Suburbia - WebElement tech Successfully identified
+2019-01-07 20:00:25,505 [TestNG] INFO Suburbia - WebElement elem Successfully identified
+2019-01-07 20:00:30,983 [TestNG] INFO Suburbia - WebElement aud Successfully identified
+2019-01-07 20:00:36,749 [TestNG] INFO Suburbia - Execution Ended for testcase number : TC01_End_To_End at time : 2019-01-07 19:59
+2019-01-07 20:00:36,785 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 20:00:36,805 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 20:00:36,837 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 20:00:36,891 [main] INFO Suburbia -  Execution started onChrome2019-01-07_19-59
+2019-01-07 20:02:18,714 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_20-02
+2019-01-07 20:02:19,322 [TestNG] INFO Suburbia - Execution Started for Testcase number : TC01_End_To_End at time : 2019-01-07 20:02
+2019-01-07 20:02:24,588 [TestNG] INFO Suburbia - Successfully navigated to URL : https://www.suburbia.com.mx/tienda/inicio/
+2019-01-07 20:02:30,264 [TestNG] INFO Suburbia - WebElement fst Successfully identified
+2019-01-07 20:02:35,803 [TestNG] INFO Suburbia - WebElement dept Successfully identified
+2019-01-07 20:02:41,331 [TestNG] INFO Suburbia - WebElement tech Successfully identified
+2019-01-07 20:02:46,842 [TestNG] INFO Suburbia - WebElement elem Successfully identified
+2019-01-07 20:02:52,312 [TestNG] INFO Suburbia - WebElement aud Successfully identified
+2019-01-07 20:02:57,922 [TestNG] INFO Suburbia - Execution Ended for testcase number : TC01_End_To_End at time : 2019-01-07 20:02
+2019-01-07 20:02:57,950 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 20:02:57,966 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 20:02:57,982 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 20:02:58,001 [main] INFO Suburbia -  Execution started onChrome2019-01-07_20-02
+2019-01-07 20:14:56,929 [TestNG] INFO Suburbia -  Execution started on Chrome2019-01-07_20-14
+2019-01-07 20:14:57,460 [TestNG] INFO Suburbia - Execution Started for Testcase number : TC01_End_To_End at time : 2019-01-07 20:14
+2019-01-07 20:15:03,238 [TestNG] INFO Suburbia - Successfully navigated to URL : https://www.suburbia.com.mx/tienda/inicio/
+2019-01-07 20:15:09,123 [TestNG] INFO Suburbia - WebElement fst Successfully identified
+2019-01-07 20:15:14,648 [TestNG] INFO Suburbia - WebElement dept Successfully identified
+2019-01-07 20:15:20,220 [TestNG] INFO Suburbia - WebElement tech Successfully identified
+2019-01-07 20:15:25,727 [TestNG] INFO Suburbia - WebElement elem Successfully identified
+2019-01-07 20:15:31,206 [TestNG] INFO Suburbia - WebElement aud Successfully identified
+2019-01-07 20:15:36,904 [TestNG] INFO Suburbia - Execution Ended for testcase number : TC01_End_To_End at time : 2019-01-07 20:14
+2019-01-07 20:15:36,960 [TestNG] INFO Suburbia - TC02_Verify_PDP_Page has been skipped for this execution...
+2019-01-07 20:15:36,980 [TestNG] INFO Suburbia - TC03_Verify_broken_image has been skipped for this execution...
+2019-01-07 20:15:37,000 [TestNG] INFO Suburbia - TC04_Verify_broken_URLs has been skipped for this execution...
+2019-01-07 20:15:37,040 [main] INFO Suburbia -  Execution started onChrome2019-01-07_20-14

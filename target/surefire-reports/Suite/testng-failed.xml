@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Chrome_test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.testcases.driverscripts.Execute_MainScript">
+        <methods>
+          <include name="TestResults"/>
+          <include name="closebrowser"/>
+          <include name="close"/>
+          <include name="ExecuteTest" invocation-numbers="1 2 3"/>
+          <include name="beforeTest"/>
+          <include name="Pre_requisite"/>
+        </methods>
+      </class> <!-- com.testcases.driverscripts.Execute_MainScript -->
+    </classes>
+  </test> <!-- Chrome_test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
