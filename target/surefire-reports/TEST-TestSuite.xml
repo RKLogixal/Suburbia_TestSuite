@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="43.804" tests="4" errors="0" skipped="3" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="180.89" tests="16" errors="0" skipped="12" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -64,7 +64,37 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="37.377"/>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="42.847"/>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC02_Verify_PDP_Page has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC03_Verify_broken_image has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC04_Verify_broken_URLs has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="36.826"/>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC02_Verify_PDP_Page has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC03_Verify_broken_image has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC04_Verify_broken_URLs has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="39.404"/>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC02_Verify_PDP_Page has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC03_Verify_broken_image has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
+    <skipped message="TC04_Verify_broken_URLs has been skipped.."/>
+  </testcase>
+  <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="37.408"/>
   <testcase name="ExecuteTest" classname="com.testcases.driverscripts.Execute_MainScript" time="0">
     <skipped message="TC02_Verify_PDP_Page has been skipped.."/>
   </testcase>

@@ -1,20 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="chrome"/>
-  <test name="Chrome_test(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="DeviceScrWidth" value="700"/>
+  <parameter name="Device" value="iphone7"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="Channel" value="Mobile"/>
+  <parameter name="DeviceScrHeight" value="800"/>
+  <test name="Mobile_Chrome_test_iphone6(failed)">
+    <parameter name="DeviceScrWidth" value="600"/>
+    <parameter name="Device" value="iphone6"/>
     <parameter name="browser" value="chrome"/>
+    <parameter name="Channel" value="Mobile"/>
+    <parameter name="DeviceScrHeight" value="400"/>
     <classes>
       <class name="com.testcases.driverscripts.Execute_MainScript">
         <methods>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
           <include name="TestResults"/>
           <include name="closebrowser"/>
           <include name="close"/>
           <include name="ExecuteTest" invocation-numbers="1 2 3"/>
-          <include name="beforeTest"/>
           <include name="Pre_requisite"/>
         </methods>
       </class> <!-- com.testcases.driverscripts.Execute_MainScript -->
     </classes>
-  </test> <!-- Chrome_test(failed) -->
+  </test> <!-- Mobile_Chrome_test_iphone6(failed) -->
+  <test name="Mobile_Chrome_test1_iphone7(failed)">
+    <parameter name="DeviceScrWidth" value="700"/>
+    <parameter name="Device" value="iphone7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="Channel" value="Mobile"/>
+    <parameter name="DeviceScrHeight" value="800"/>
+    <classes>
+      <class name="com.testcases.driverscripts.Execute_MainScript">
+        <methods>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="closebrowser"/>
+          <include name="close"/>
+          <include name="ExecuteTest" invocation-numbers="1 2 3"/>
+          <include name="Pre_requisite"/>
+        </methods>
+      </class> <!-- com.testcases.driverscripts.Execute_MainScript -->
+    </classes>
+  </test> <!-- Mobile_Chrome_test1_iphone7(failed) -->
+  <test name="Mobile_firefox_test_iphone6(failed)">
+    <parameter name="DeviceScrWidth" value="600"/>
+    <parameter name="Device" value="iphone6"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="Channel" value="Mobile"/>
+    <parameter name="DeviceScrHeight" value="400"/>
+    <classes>
+      <class name="com.testcases.driverscripts.Execute_MainScript">
+        <methods>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="closebrowser"/>
+          <include name="close"/>
+          <include name="ExecuteTest" invocation-numbers="1 2 3"/>
+          <include name="Pre_requisite"/>
+        </methods>
+      </class> <!-- com.testcases.driverscripts.Execute_MainScript -->
+    </classes>
+  </test> <!-- Mobile_firefox_test_iphone6(failed) -->
+  <test name="Mobile_firefox_test1_iphone7(failed)">
+    <parameter name="DeviceScrWidth" value="700"/>
+    <parameter name="Device" value="iphone7"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="Channel" value="Mobile"/>
+    <parameter name="DeviceScrHeight" value="800"/>
+    <classes>
+      <class name="com.testcases.driverscripts.Execute_MainScript">
+        <methods>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="EnvSetup"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="TestResults"/>
+          <include name="closebrowser"/>
+          <include name="close"/>
+          <include name="ExecuteTest" invocation-numbers="1 2 3"/>
+          <include name="Pre_requisite"/>
+        </methods>
+      </class> <!-- com.testcases.driverscripts.Execute_MainScript -->
+    </classes>
+  </test> <!-- Mobile_firefox_test1_iphone7(failed) -->
 </suite> <!-- Failed suite [Suite] -->

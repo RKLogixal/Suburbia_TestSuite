@@ -51,120 +51,147 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 public class Execute_MainScript {
 
 	Platform macOS;
+
 	WebDriver webdriver=null;
-	public Logger Applog;
+
+	public static Logger Applog;
+
 	public static ExtentHtmlReporter htmlreporter;
+
 	public static ExtentReports extent;
+
 	public static ExtentTest test;
+
 	Script_executor scre = new Script_executor();
+
 	String browser_name;
+
 	String Testcasenumber;
+
 	String Sitename;
-	Date date;
+	String Channel;
+	String Device;
+	int DeviceScrHeight;
+	int DeviceScrWidth;
+	static Date date;
+
 	Xls_writer xls_writer=new Xls_writer();
+
 	Readconfig rc =new Readconfig();
-	SimpleDateFormat dateFormat;
+
+	public static SimpleDateFormat dateFormat;
+
 	Map<Integer, Object[]> Testcase_skipresults = new LinkedHashMap<Integer, Object[]>();
+
 	Map<Integer, Object[]> Testscase_failresults = new LinkedHashMap<Integer, Object[]>();
+
 	private SoftAssert softAssert = new SoftAssert();
-	@BeforeTest()
+
+	@BeforeSuite()
+
 	public void Pre_requisite() throws IOException{
+
 		Applog=Logger.getLogger("Suburbia");
+
+
 		PropertyConfigurator.configure("./resources/Log4j.properties");
+
 		htmlreporter= new ExtentHtmlReporter(System.getProperty("user.dir") +"/test-output/STMExtentReport_Suburbia.html");
+
 		extent = new ExtentReports ();
+
 		extent.attachReporter(htmlreporter);
+
 		rc.getObjectRepository();
+
 		date = new Date() ;
+
 		dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH-mm") ;
+		Applog.info("Execution started on Firefox" + dateFormat.format(date));
 	}
 
-	@Parameters("browser")
+
+	@Parameters({"browser","Channel","Device","DeviceScrHeight","DeviceScrWidth"})
 	@BeforeTest
 
-	public void beforeTest(String browser) throws IOException
+	public void EnvSetup(String browser,String Channel,String Device,int DeviceScrHeight,int DeviceScrWidth) throws IOException
 	{
+		this.browser_name=browser;
+		this.Channel=Channel;
 
-		if (browser.equalsIgnoreCase("firefox"))
-		{
-
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"/Browser_files/geckodriver-v0.23.0-win64/geckodriver.exe");
-			webdriver = new FirefoxDriver();
-			this.browser_name="Firefox";
-
-			Applog.info("Execution started on Firefox" + dateFormat.format(date));
+		if (Channel.equalsIgnoreCase("Desktop")) {
 
 
-		} else if (browser.equalsIgnoreCase("chrome"))
-		{
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/Browser_files/chromedriver_win32/chromedriver.exe");
-			//WebDriverManager.chromedriver().setup();
-			webdriver = new ChromeDriver();
-			Dimension d = new Dimension(414, 736);
-			webdriver.manage().window().setSize(d);
-			//webdriver.manage().window().maximize();
+			if (browser.equalsIgnoreCase("firefox"))
+			{
 
-			this.browser_name="Chrome";
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"/Browser_files/geckodriver-v0.23.0-win64/geckodriver.exe");
+				webdriver = new FirefoxDriver();
+				webdriver.manage().window().maximize();
+				this.browser_name=browser;
+				this.Channel=Channel;
 
-			Applog.info(" Execution started on Chrome" + dateFormat.format(date));
+				Applog.info("Execution started on Firefox" + dateFormat.format(date));
 
-		}
-		else if (browser.equalsIgnoreCase("safari"))
-		{
-			this.browser_name="Safari";
 
-			Applog.info(" Execution started on Safari" + dateFormat.format(date));
-			DesiredCapabilities cap = DesiredCapabilities.safari();
+			} else if (browser.equalsIgnoreCase("chrome"))
+			{
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/Browser_files/chromedriver_win32/chromedriver.exe");
+				//WebDriverManager.chromedriver().setup();
+				webdriver = new ChromeDriver();
+				webdriver.manage().window().maximize();
 
-			cap.setBrowserName("safari");
-			cap.setPlatform(Platform.MAC);
-			String hub = rc.hub;
+				this.browser_name=browser;
+				this.Channel=Channel;
+				Applog.info(" Execution started on Chrome" + dateFormat.format(date));
 
-			webdriver = new RemoteWebDriver(new URL(hub), cap);
-			webdriver.manage().window().maximize();
+			}
 
-		}
-		else if (browser.equalsIgnoreCase("IE"))
-		{
-			this.browser_name="IE";
-
-			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-			capabilities.setCapability(CapabilityType.BROWSER_NAME, "internet explorer");
-			capabilities.setCapability(InternetExplorerDriver.
-					INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") +"/Browser_files/IEDriverServer.exe");
-
-			webdriver = new InternetExplorerDriver(capabilities);
-			webdriver.manage().window().maximize();
-			Applog.info(" Execution started on Internet explorer" + dateFormat.format(date));
-
+			else
+			{
+				throw new IllegalArgumentException("The Browser Type is Undefined");
+			}
 		}
 
-		else if (browser.equalsIgnoreCase("EDGE"))
-		{
-			this.browser_name="IE_EDGE";
+		if (Channel.equalsIgnoreCase("Mobile")) {
 
-			/*	DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-			capabilities.setCapability(CapabilityType.BROWSER_NAME, "internet explorer");
-			capabilities.setCapability(InternetExplorerDriver.
-					INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-			 */
-			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") +"/Browser_files/Edgedriver/MicrosoftWebDriver.exe");
+			this.Device=Device;
+			this.DeviceScrHeight=DeviceScrHeight;
+			this.DeviceScrWidth=DeviceScrWidth;
 
-			//webdriver = new InternetExplorerDriver(capabilities);
-			WebDriver driver = new EdgeDriver();
-			Applog.info(" Execution started on Internet explorer" + dateFormat.format(date));
+			if (browser.equalsIgnoreCase("firefox"))
+			{
+
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"/Browser_files/geckodriver-v0.23.0-win64/geckodriver.exe");
+				webdriver = new FirefoxDriver();
+				Dimension d = new Dimension(DeviceScrWidth,DeviceScrHeight);
+				webdriver.manage().window().setSize(d);
+				Applog.info("Mobile Test execution started on Firefox" + dateFormat.format(date));
+
+
+			} else if (browser.equalsIgnoreCase("chrome"))
+			{
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/Browser_files/chromedriver_win32/chromedriver.exe");
+				//WebDriverManager.chromedriver().setup();
+				webdriver = new ChromeDriver();
+				Dimension d = new Dimension(DeviceScrWidth,DeviceScrHeight);
+				webdriver.manage().window().setSize(d);
+				Applog.info("Mobile Test execution started on Chrome" + dateFormat.format(date));
+
+			}
+
+			else
+			{
+				throw new IllegalArgumentException("The Browser Type is Undefined");
+			}
 
 		}
-		else
-		{
-			throw new IllegalArgumentException("The Browser Type is Undefined");
+		else {
+			throw new IllegalArgumentException("The Channel Type is Undefined");
 		}
+	}
 
 
-
-	}	
 
 
 
@@ -178,13 +205,21 @@ public class Execute_MainScript {
 
 		if(Executionmode.equalsIgnoreCase("Yes")){
 			try {
-				scre.Execute_script(Sitename,browser_name,"./Input_files/Actual_testcases/Suburbia/","./Output_files/"+dateFormat.format(date)+"/"+Sitename+"/"+browser_name+"/",
-						"./Screenshots/"+dateFormat.format(date)+"/"+"Suburbia/"+browser_name+"/", webdriver,Section,Functionality, Testcasenumber, Testcase_description, Executionmode, Severity,extent,Applog);
+				if(Channel.equalsIgnoreCase("Desktop")){
+					scre.Execute_script(Sitename,browser_name,"./Input_files/Actual_testcases/Suburbia/","./Output_files/"+dateFormat.format(date)+"/"+Sitename+"/"+browser_name+"/",
+							"./Screenshots/"+dateFormat.format(date)+"/"+"Suburbia/"+browser_name+"/", webdriver,Section,Functionality, Testcasenumber, Testcase_description, Executionmode, Severity,extent,Applog);
+
+				}
+				else if (Channel.equalsIgnoreCase("Mobile")) {
+					scre.Execute_script(Sitename,browser_name,"./Input_files/Actual_testcases/Suburbia/","./Output_files/"+dateFormat.format(date)+"/"+Sitename+"/"+browser_name+"/"+Device+"/",
+							"./Screenshots/"+dateFormat.format(date)+"/"+"Suburbia/"+browser_name+"/"+Device+"/", webdriver,Section,Functionality, Testcasenumber, Testcase_description, Executionmode, Severity,extent,Applog);
+
+				}
 
 			} catch (Exception e) {
 				StringWriter stack = new StringWriter();
 				e.printStackTrace(new PrintWriter(stack));
-				xls_writer.GenerateFailReport(Testscase_failresults, "Suburbia", browser_name, Functionality, Testcasenumber, Severity,"./Failed_Reports/"+dateFormat.format(date)+"/"+"Suburbia/"+browser_name+"/");
+				xls_writer.GenerateFailReport(Testscase_failresults, "Suburbia", browser_name, Functionality, Testcasenumber, Severity,"./Failed_Reports/"+dateFormat.format(date)+"/"+"Suburbia/"+browser_name+"/"+Device+"/");
 				Assert.fail(stack.toString());
 				Applog.error(stack.toString());
 				stack.flush();
@@ -196,7 +231,7 @@ public class Execute_MainScript {
 		}
 		else{
 
-			xls_writer.GenearateSkipFile(Testcase_skipresults,Functionality, Testcasenumber, Severity,"./Output_files/"+dateFormat.format(date)+"/"+"Suburbia/"+browser_name+"/");
+			xls_writer.GenearateSkipFile(Testcase_skipresults,Functionality, Testcasenumber, Severity,"./Output_files/"+dateFormat.format(date)+"/"+"Suburbia/"+browser_name+"/"+Device+"/");
 			Applog.info(Testcasenumber + " has been skipped for this execution...");
 			throw new SkipException(Testcasenumber +" has been skipped..");
 		}
@@ -206,18 +241,42 @@ public class Execute_MainScript {
 	public void TestResults(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 
-			test = extent.createTest(Sitename+"_"+browser_name+"_"+Testcasenumber);
-			test.fail(MarkupHelper.createLabel(Testcasenumber+" has been failed....", ExtentColor.RED));
+			if (Channel.equalsIgnoreCase("Mobile")) {
+				test = extent.createTest(Sitename+"_"+browser_name+"_"+Device+"_"+Testcasenumber);
+				test.fail(MarkupHelper.createLabel(Testcasenumber+" has been failed....", ExtentColor.RED));
+			}
+			else {
+				test = extent.createTest(Sitename+"_"+browser_name+"_"+Testcasenumber);
+				test.fail(MarkupHelper.createLabel(Testcasenumber+" has been failed....", ExtentColor.RED));
+
+			}
 
 		}        
 		else if (result.getStatus() == ITestResult.SKIP) {
-			test = extent.createTest(Sitename+"_"+browser_name+"_"+Testcasenumber);
-			test.skip(MarkupHelper.createLabel(Testcasenumber+" has been skipped for this execution...", ExtentColor.YELLOW));
+
+			if (Channel.equalsIgnoreCase("Mobile")) {
+				test = extent.createTest(Sitename+"_"+browser_name+"_"+Device+"_"+Testcasenumber);
+				test.skip(MarkupHelper.createLabel(Testcasenumber+" has been skipped for this execution...", ExtentColor.YELLOW));
+			}
+
+			else {
+
+				test = extent.createTest(Sitename+"_"+browser_name+"_"+Testcasenumber);
+				test.skip(MarkupHelper.createLabel(Testcasenumber+" has been skipped for this execution...", ExtentColor.YELLOW));
+			}
 
 		}
 		else if (result.getStatus() == ITestResult.SUCCESS) {
-			test = extent.createTest(Sitename+"_"+browser_name+"_"+Testcasenumber);
-			test.pass(MarkupHelper.createLabel(Testcasenumber + "has been passed", ExtentColor.GREEN));
+
+			if (Channel.equalsIgnoreCase("Mobile")) {
+				test = extent.createTest(Sitename+"_"+browser_name+"_"+Device+"_"+Testcasenumber);
+				test.pass(MarkupHelper.createLabel(Testcasenumber + "has been passed", ExtentColor.GREEN));
+			}
+			else {
+				test = extent.createTest(Sitename+"_"+browser_name+"_"+Testcasenumber);
+				test.pass(MarkupHelper.createLabel(Testcasenumber + "has been passed", ExtentColor.GREEN));
+
+			}
 
 		}
 	}
