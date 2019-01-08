@@ -97,8 +97,8 @@ public class Execute_MainScript {
 
 		} else if (browser.equalsIgnoreCase("chrome"))
 		{
-			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/Browser_files/chromedriver_win32/chromedriver.exe");
-			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/Browser_files/chromedriver_win32/chromedriver.exe");
+			//WebDriverManager.chromedriver().setup();
 			webdriver = new ChromeDriver();
 			Dimension d = new Dimension(414, 736);
 			webdriver.manage().window().setSize(d);
