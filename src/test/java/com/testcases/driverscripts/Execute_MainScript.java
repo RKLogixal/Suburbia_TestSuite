@@ -39,6 +39,9 @@ import com.operations.Common.Readconfig;
 import com.operations.Common.Script_executor;
 import com.operations.Common.Xls_writer;
 import com.operations.suburbia.Master_data1;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.markuputils.ExtentColor;
@@ -94,7 +97,8 @@ public class Execute_MainScript {
 
 		} else if (browser.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/Browser_files/chromedriver_win32/chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/Browser_files/chromedriver_win32/chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			webdriver = new ChromeDriver();
 			Dimension d = new Dimension(414, 736);
 			webdriver.manage().window().setSize(d);

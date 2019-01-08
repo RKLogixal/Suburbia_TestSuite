@@ -2,16 +2,16 @@
 <testng-results skipped="3" failed="0" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44493" started-at="2019-01-07T14:44:52Z" finished-at="2019-01-07T14:45:37Z">
+  <suite name="Suite" duration-ms="42626" started-at="2019-01-08T07:07:19Z" finished-at="2019-01-08T07:08:02Z">
     <groups>
     </groups>
-    <test name="Chrome_test" duration-ms="44493" started-at="2019-01-07T14:44:52Z" finished-at="2019-01-07T14:45:37Z">
+    <test name="Chrome_test" duration-ms="42626" started-at="2019-01-08T07:07:19Z" finished-at="2019-01-08T07:08:02Z">
       <class name="com.testcases.driverscripts.Execute_MainScript">
-        <test-method status="PASS" signature="Pre_requisite()[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="Pre_requisite" is-config="true" duration-ms="203" started-at="2019-01-07T20:14:52Z" finished-at="2019-01-07T20:14:52Z">
+        <test-method status="PASS" signature="Pre_requisite()[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="Pre_requisite" is-config="true" duration-ms="222" started-at="2019-01-08T12:37:19Z" finished-at="2019-01-08T12:37:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Pre_requisite -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="beforeTest" is-config="true" duration-ms="4203" started-at="2019-01-07T20:14:52Z" finished-at="2019-01-07T20:14:56Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="beforeTest" is-config="true" duration-ms="4483" started-at="2019-01-08T12:37:19Z" finished-at="2019-01-08T12:37:24Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="ExecuteTest" duration-ms="39506" started-at="2019-01-07T20:14:57Z" data-provider="Fetch_Master_data" finished-at="2019-01-07T20:15:36Z">
+        <test-method status="PASS" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="ExecuteTest" duration-ms="37377" started-at="2019-01-08T12:37:24Z" data-provider="Fetch_Master_data" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
@@ -58,18 +58,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="TestResults" is-config="true" duration-ms="12" started-at="2019-01-07T20:15:36Z" finished-at="2019-01-07T20:15:36Z">
+        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="TestResults" is-config="true" duration-ms="15" started-at="2019-01-08T12:38:02Z" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExecuteTest status=SUCCESS method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5] output={null}]]]>
+                <![CDATA[[TestResult name=ExecuteTest status=SUCCESS method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestResults -->
-        <test-method status="SKIP" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="ExecuteTest" duration-ms="44" started-at="2019-01-07T20:15:36Z" data-provider="Fetch_Master_data" finished-at="2019-01-07T20:15:36Z">
+        <test-method status="SKIP" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="ExecuteTest" duration-ms="32" started-at="2019-01-08T12:38:02Z" data-provider="Fetch_Master_data" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: TC02_Verify_PDP_Page has been skipped..
-	at com.testcases.driverscripts.Execute_MainScript.ExecuteTest(Execute_MainScript.java:197)
+	at com.testcases.driverscripts.Execute_MainScript.ExecuteTest(Execute_MainScript.java:201)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,18 +135,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="TestResults" is-config="true" duration-ms="0" started-at="2019-01-07T20:15:36Z" finished-at="2019-01-07T20:15:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ExecuteTest status=SKIP method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestResults -->
-        <test-method status="SKIP" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="ExecuteTest" duration-ms="20" started-at="2019-01-07T20:15:36Z" data-provider="Fetch_Master_data" finished-at="2019-01-07T20:15:36Z">
+        <test-method status="SKIP" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="ExecuteTest" duration-ms="15" started-at="2019-01-08T12:38:02Z" data-provider="Fetch_Master_data" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
@@ -185,7 +174,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: TC03_Verify_broken_image has been skipped..
-	at com.testcases.driverscripts.Execute_MainScript.ExecuteTest(Execute_MainScript.java:197)
+	at com.testcases.driverscripts.Execute_MainScript.ExecuteTest(Execute_MainScript.java:201)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -212,7 +201,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="SKIP" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="ExecuteTest" duration-ms="20" started-at="2019-01-07T20:15:36Z" data-provider="Fetch_Master_data" finished-at="2019-01-07T20:15:37Z">
+        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="TestResults" is-config="true" duration-ms="0" started-at="2019-01-08T12:38:02Z" finished-at="2019-01-08T12:38:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ExecuteTest status=SKIP method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestResults -->
+        <test-method status="SKIP" signature="ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="ExecuteTest" duration-ms="20" started-at="2019-01-08T12:38:02Z" data-provider="Fetch_Master_data" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
@@ -251,7 +251,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: TC04_Verify_broken_URLs has been skipped..
-	at com.testcases.driverscripts.Execute_MainScript.ExecuteTest(Execute_MainScript.java:197)
+	at com.testcases.driverscripts.Execute_MainScript.ExecuteTest(Execute_MainScript.java:201)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -278,33 +278,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExecuteTest -->
-        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="TestResults" is-config="true" duration-ms="0" started-at="2019-01-07T20:15:36Z" finished-at="2019-01-07T20:15:36Z">
+        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="TestResults" is-config="true" duration-ms="0" started-at="2019-01-08T12:38:02Z" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExecuteTest status=SKIP method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5] output={null}]]]>
+                <![CDATA[[TestResult name=ExecuteTest status=SKIP method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestResults -->
-        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="TestResults" is-config="true" duration-ms="8" started-at="2019-01-07T20:15:37Z" finished-at="2019-01-07T20:15:37Z">
+        <test-method status="PASS" signature="TestResults(org.testng.ITestResult)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="TestResults" is-config="true" duration-ms="0" started-at="2019-01-08T12:38:02Z" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExecuteTest status=SKIP method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@327471b5] output={null}]]]>
+                <![CDATA[[TestResult name=ExecuteTest status=SKIP method=Execute_MainScript.ExecuteTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestResults -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="close" is-config="true" duration-ms="280" started-at="2019-01-07T20:15:37Z" finished-at="2019-01-07T20:15:37Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="close" is-config="true" duration-ms="325" started-at="2019-01-08T12:38:02Z" finished-at="2019-01-08T12:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@327471b5]" name="closebrowser" is-config="true" duration-ms="134" started-at="2019-01-07T20:15:37Z" finished-at="2019-01-07T20:15:37Z">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:com.testcases.driverscripts.Execute_MainScript@6537cf78]" name="closebrowser" is-config="true" duration-ms="133" started-at="2019-01-08T12:38:02Z" finished-at="2019-01-08T12:38:02Z">
           <params>
             <param index="0">
               <value>
